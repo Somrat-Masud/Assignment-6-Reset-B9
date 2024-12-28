@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-6</title>
+<style>
+  .active{
+    background-color: rgba(47, 232, 232, 0.463);
+    color:  white;
+  }
+</style>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-[#ffffff] w-11/12 mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <!-- Logo-Section -->
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 shadow w-36 p-2  text-xl ">
+                      <li>Home</li>
+                      <li>Shop </li>
+                      <li>Contact</li>
+                    </ul>
+                  </div>
+                  <div class="space-x-3 flex md:ml-0 ml-14 lg:ml-0 ">
+                    <img src="./assets/logo.webp" alt="">
+                  <a class="text-xl  font-bold">Peddy</a>
+                  </div>
+                </div>
+                <!-- Middle_Section -->
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1  text-xl gap-6">
+                    <li>Home</li>
+                    <li>Shop </li>
+                    <li>Contact</li>
+                  </ul>
+                </div>
+                <!-- Image_Section -->
+                <div class="navbar-end">
+                    <img class="text-sm h-11 rounded-full" src="./assets/logo-1.png" alt="">
+                </div>
+              </div>
+        </nav>
+
+        <section>
+            <div class="space-y-6 mt-6 text-center w-8/12 mx-auto ">
+                <h4 class="text-xl text-gray-400 ">Bringing Families Together ❤️‍🔥 </h4>
+                <h1 class="md:text-4xl lg:text-4xl sm:text-xl font-bold"> Your Path to Adoption <br>  Starts Here</h1>
+                <p class="md:text-xl sm:text-sm  text-gray-700">The perfect tagline for an animal adoption campaign! It conveys warmth, companionship, and the transformative bond that comes with adopting a pet.</p>
+                <button class="btn btn-success  text-white"><a href="#viewMoreId">Vew More</a></button>
+                <div class="mt-6">
+                    <img class="md:w-7/12 lg:w-7/12 sm:w-8/12 mx-auto" src="./assets/pet.webp" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="w-11/12 mx-auto">
+        <section>
+            <div class="space-y-4 mt-6 w-8/12 text-center mx-auto">
+                <h1 class="md:text-4xl lg:text-4xl sm:text-xl font-bold">Adopt Your Best Friend</h1>
+                <p class="md:text-xl  lg:text-xl sm:text-sm  text-gray-700"">Is an inviting and powerful call-to-action for promoting pet adoptions. Here are some ideas to bring this concept to life</p>
+              </div>
+            <nav id="categories" class="py-3 mt-7 md:flex sm:flex-col-1     md:justify-evenly"></nav>
+        </section>
+        <!-- input Section -->
+<div class="join w-full  ">
+  <input
+    type="text"
+    placeholder="Best Deal For you"
+    class="input input-bordered join-item w-full " />
+  <button id="viewMoreId" onclick="displaySortbyPrice()" class="btn btn-success join-item font-bold  text-base-100">Sort By Price</button>
+</div>
+
+         <!-- All Data Add section -->
+          <!-- Left Side -->
+        <section class="md:flex  gap-2">
+          <div id="dataAllAdd" class="w-11/12 mx-auto grid sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 py-10">
+
+          </div>
+          <!-- Right Side -->
+          <section id="likedId" class=" md:w-1/4  mt-8 grid-cols-1 w-full rounded-md border-2">
+
+          </section>
+        </section>
+
+        <!-- Open the modal using ID.showModal() method -->
+<button id="showModalData" class="btn hidden" onclick="customModal.showModal()">open modal</button>
+<dialog id="customModal" class="modal modal-bottom sm:modal-middle">
+  <div class="modal-box">
+<div id="modal-content">
+
+</div>
+    <div class="modal-action">
+      <form method="dialog">
+        <button class="px-52 btn btn-outline btn-accent">Cencel</button>
+      </form>
+    </div>
+  </div>
+</dialog>
+    </main>
+    <footer>
+      <div  class="footer  bg-gray-900 text-gray-400 text-base-content mt-10 p-10">
+        <div>
+         <div >
+          <h4 class="flex justify-center items-center gap-3"><img src="/assets/logo.webp" alt=""><span class="text-xl font-bold">Peddy</span></h4>
+         </div>
+          <h6 class="footer-title">Location: av. Washington 165, NY CA 54003</h6>
+          <a class="link link-hover">Phone: +31 85 964 47 25</a>
+          <a class="link link-hover">Email: info@yourdomain.com</a>
+          <a class="link link-hover">Openings hours: 9.00 AM - 5.00 PM</a>
+          <div class="flex justify-center items-center ">
+            <a href=""><img class="w-[10] h-[10]" src="/assets/facebook.png" alt=""></a>
+            <a href=""><img  class="w-[10] h-[10]" src="/assets/twitter.png" alt=""></a>
+            <a href=""><img  class="w-[5] h-[5]" src="/assets/instagram.png" alt=""></a>
+            <a href=""><img  class="w-[10] h-[10]" src="/assets/youtube.png" alt=""></a>
+          </div>
+        </div>
+        <div>
+          <h4 class="footer-title">Useful Links</h4>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">Animals</a>
+          <a class="link link-hover">Foundation</a>
+        </div>
+        <div>
+          <h4 class="footer-title">Drop a Message</h4>
+          <fieldset class="form-control md:w-80 sm:w-40">
+            <div class="join">
+              <input
+                type="text"
+                placeholder="Enter Your Mail"
+                class="w-full input-bordered bg-slate-950 text-gray-400 p-4 rounded-xl" />
+            </div>
+            <br>
+            <button class="btn btn-primary">Subscribe</button>
+          </fieldset>
+        </div>
+      </div>
+      <div>
+      </div>
+    </footer>
+    <div id="timeoutFunction" class="hidden"></div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
+
