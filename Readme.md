@@ -11,4 +11,4 @@ Es6 features uses:
  4.Destructuring
  5. Object Literals
 
-Live Link to the project:
+Live Link to the project: https://project-assignment-6-bathch-9-reset.surge.sh/#viewMoreId
